@@ -5,13 +5,13 @@ plugins {
 
 android {
     namespace = "com.victorcs.kmpfirststeps.android"
-    compileSdk = 34
+    compileSdk = PlayStore.compileSdk
     defaultConfig {
         applicationId = "com.victorcs.kmpfirststeps.android"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = PlayStore.minSdk
+        targetSdk = PlayStore.targetSdk
+        versionCode = PlayStore.versionCode
+        versionName = PlayStore.versionName
     }
     buildFeatures {
         compose = true
